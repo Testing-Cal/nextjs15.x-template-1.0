@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-template-1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "lint": "next lint",
+    "build": "next build",
+    "start": "next start --port=${port}",
+    "test": "jest --env=jsdom --testResultsProcessor ./node_modules/jest-sonar-reporter/index.js --watchAll=false -u",
+    "coverage": "jest --watchAll=false -u --coverage",
+    "test:ci": "jest --ci",
+    "sonar": "sonar-scanner"
+  },
+  "dependencies": {
+    "next": "^15.0.2",
+    "react": "^19.0.0-rc-0bc30748-20241028",
+    "react-dom": "^19.0.0-rc-0bc30748-20241028"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "22.0.0",
+    "@types/react": "18.3.3",
+    "babel-jest": "^29.7.0",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "eslint-plugin-testing-library": "6.2.2",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "react-test-renderer": "18.3.1",
+    "typescript": "5.5.4"
+  },
+  "jestSonar": {
+    "reportPath": ".",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
+  }
+}
