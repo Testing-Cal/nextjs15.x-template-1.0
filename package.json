@@ -2,7 +2,7 @@
   "name": "nextjs-template-1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port=${port}",
     "lint": "next lint",
     "build": "next build",
     "start": "next start --port=${port}",
